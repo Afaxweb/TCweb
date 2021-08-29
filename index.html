@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>TC</title>
+</head>
+<body>
+  <script>
+    $.urlParam = function(name, url) {
+        if (!url) {
+            url = window.location.href;
+        }
+        var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(url);
+        if (!results) {
+            return undefined;
+        }
+        return results[1] || undefined;
+    }
+    window.onload = function() {
+        var forceDesktop = $.urlParam('forceDesktop');
+        if (!forceDesktop) {
+            if ( $(window).width() < 639) {
+                var url = "https://www.designernews.co/error";
+                $(location).attr('href',url);
+            }
+        }
+    };
+</script>
+
+  <header>
+      <div class="head-wrap">
+          <div class="head-wrap-inner">
+              <img class="head-logo" src="logo.png">
+              <nav class="head-menu-top-nav">
+                  <ul>
+                  </ul>
+               </nav>
+               </div>
+          </div>
+          <div class="head-wrap-sub">
+              <nav class="head-menu-main-nav">
+                  <ul>
+                      <li class="main-nav01"><a href="https://discord.gg/eSsWfBktNP">디스코드</a></li>
+                      <li class="main-nav02"><a href="#">소식</a></li>
+                      <li class="main-nav03"><a href="#">특별공지</a></li>
+                      <li class="main-nav04"><a href="#">이밴트</a></li>
+                      <li class="main-nav05"><a href="#">맴버쉽</a></li>
+                      <li class="main-nav06"><a href="memfi.html">맴버경쟁</a></li>
+                  </ul>
+          </nav>
+          </div>
+<h1>준비중 9월 개장!!</h1>
+
+      </div>
+  </header>
+
+
+
+</body>
+</html>
