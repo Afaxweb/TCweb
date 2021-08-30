@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BS8XXMBZQE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BS8XXMBZQE');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta name="google-signin-scope" content="profile email">
+<meta name="google-signin-client_id" content="구글API아이디.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+  <title>TC</title>
+</head>
+<body>
+  <script>
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+  {
+     var url = "";
+     $(location).attr('href',url);
+
+  }
+</script>
+<div>Lorem ipsum</div>
+<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark">dfd</div>
+<script>
+  function onSignIn(googleUser) {
+      // Useful data for your client-side scripts:
+      var profile = googleUser.getBasicProfile();
+      console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+      console.log('Full Name: ' + profile.getName());
+      console.log('Given Name: ' + profile.getGivenName());
+      console.log('Family Name: ' + profile.getFamilyName());
+      console.log("Image URL: " + profile.getImageUrl());
+      console.log("Email: " + profile.getEmail());
+
+      // The ID token you need to pass to your backend:
+      var id_token = googleUser.getAuthResponse().id_token;
+      console.log("ID Token: " + id_token);
+  };
+</script>
+  <header>
+      <div class="head-wrap">
+          <div class="head-wrap-inner">
+              <a href="https://tc.mcv.kr" target="_blank"><img class="head-logo" src="logo.png"></a>
+              <nav class="head-menu-top-nav">
+                  <ul>
+                  </ul>
+               </nav>
+               </div>
+          </div>
+          <div class="head-wrap-sub">
+              <nav class="head-menu-main-nav">
+                  <ul>
+                      <li class="main-nav01"><a href="https://discord.gg/eSsWfBktNP">디스코드</a></li>
+                      <li class="main-nav02"><a href="#">소식</a></li>
+                      <li class="main-nav03"><a href="#">특별공지</a></li>
+                      <li class="main-nav04"><a href="#">이밴트</a></li>
+                      <li class="main-nav05"><a href="play.html">음악플레이</a></li>
+                      <li class="main-nav06"><a href="memfi.html">맴버경쟁</a></li>
+                  </ul>
+          </nav>
+          </div>
+            <h1>배그이스포지2대2</h1>
+            <br>
+            <h5>8월 28일</h5>
+1라운드 | 애플,롱롱팀 승
+            <br>2라운드 | 미정</br>
+      </div>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+  </header>
+
+
+
+</body>
+</html>
